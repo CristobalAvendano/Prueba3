@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Lista Vehiculos</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
+</head>
+<div class="fondo">
+
+    <body>
+        <div class='titulo'>
+            <h1> Listado de vehiculos </h1>
+        </div>
+        <table class="table table-dark table-hover lista-vehiculos">
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Vin</th>
+                <th>Patente</th>
+                <th>Año de fabricación</th>
+                <th>Fecha de recepción</th>
+            </tr>
+            {% for vehiculo in vehiculo %}
+            <tr>
+                <td>{{vehiculo.marca}}</td>
+                <td>{{vehiculo.modelo}} </td>
+                <td>{{vehiculo.vin}} </td>
+                <td>{{vehiculo.patente}} </td>
+                <td>{{vehiculo.año}}</td>
+                <td>{{vehiculo.fecha}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</html>

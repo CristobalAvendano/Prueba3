@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Agregar Vehiculo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
+</head>
+<div class="fondo">
+
+    <body>
+        {% block content %}
+        <h1 class="titulo">NUEVO VEHICULO</h1>
+        <form method="POST" class="formulario">
+            {% csrf_token %}
+            {{formulario.as_p}}
+            <button type="submit" class="almacenar">
+                Almacenar
+            </button>
+        </form> {% endblock %}
+    </body>
+</div>
+
+</html>
