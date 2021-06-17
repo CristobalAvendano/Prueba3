@@ -12,11 +12,11 @@
 
     <body>
         {% block content %}
-        <h1 class="titulo">NUEVO VEHICULO</h1>
+        <h1 class="titulo">Nuevo Vehiculo</h1>
         <form method="POST" class="formulario">
             {% csrf_token %}
             {{formulario.as_p}}
-            <button type="submit" class="almacenar">
+            <button type="submit" class="almacenar btn btn-primary">
                 Almacenar
             </button>
         </form> {% endblock %}
