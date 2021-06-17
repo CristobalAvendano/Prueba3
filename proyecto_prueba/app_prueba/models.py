@@ -7,7 +7,7 @@ class Vehiculo(models.Model):
 
     usuario = models.ForeignKey(
         'auth.User', on_delete=models.CASCADE, null=True)
-    vin = models.CharField(max_length=17, default='', class MinLengthValidator)
+    vin = models.CharField(max_length=17, default='')
     patente = models.CharField(
         max_length=6, default='')
     año = models.CharField(max_length=4, default='', validators=[
