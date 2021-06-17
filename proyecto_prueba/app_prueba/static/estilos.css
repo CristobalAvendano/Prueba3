@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+  }
+
+.lista-vehiculos{
+    width: 50%;
+    position:relative;
+    left:24%;
+    margin-top: 5%;
+}
+
+.titulo{
+    color:lightblue;
+    position: relative;
+    left: 35%;
+}
+
+.fondo{
+    background-image: url('/static/img/fondo.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.formulario{
+    color:white;
+    margin-left:40%;
+    margin-top:3%;
+    padding-right: 50%;
+}
+.almacenar{
+    margin-left:30%;
+    margin-top:5%;
+}
+
+.tituloLogin{
+    color:lightblue;
+    position: relative;
+}
+
+.login{
+    color:white;
+    margin-top: 5%;
+}
+
+.botonIndex{
+    margin-left: 22%;
+}
